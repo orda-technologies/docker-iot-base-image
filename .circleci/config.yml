@@ -13,7 +13,7 @@ jobs:
             docker login -u $DOCKER_USER -p $DOCKER_PASS
             REPO=orda/iot-base
             docker build -f Dockerfile -t $REPO:$CIRCLE_SHA1 .
-            docker tag $REPO:$COMMIT $REPO:latest
+            docker tag $REPO:$CIRCLE_SHA1 $REPO:latest
             docker push $REPO
 workflows:
   version: 2
