@@ -9,4 +9,4 @@ RUN systemctl enable avahi-daemon.service
 # install nvm and node
 RUN curl -o /tmp/nvm-install.sh https://raw.githubusercontent.com/creationix/nvm/v0.33.6/install.sh
 RUN chmod +x /tmp/nvm-install.sh && /tmp/nvm-install.sh
-RUN /bin/bash -c "source /root/.nvm/nvm.sh && nvm install 8.9.1 && nvm use 8.9.1 && npm install --global --production --unsafe-perm yarn"
+RUN /bin/bash -c "source /root/.nvm/nvm.sh && nvm install 8.11.3 && nvm use 8.11.3 && npm install --global --production --unsafe-perm yarn"
