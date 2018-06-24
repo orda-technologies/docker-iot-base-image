@@ -1,8 +1,0 @@
-sudo: required
-env:
-  global:
-    - COMMIT=${TRAVIS_COMMIT::8}
-language: bash
-script: "./docker.sh"
-services:
-  - docker
